@@ -1,0 +1,11 @@
+{
+  "name": "gitbook-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.ibm.com:nguyenal/gitbook-starter.git",
+  "author": "Alexander M. Nguyen <nguyenal@us.ibm.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^5.0.1"
+  }
+}

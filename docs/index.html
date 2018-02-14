@@ -1,0 +1,263 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="gitbook-starter">GitBook Starter</h1>
+<p>This repository contains a minimal boilerplate for creating a statically hosted GitBook on GitHub Enterprise. To begin using this boilerplate, simply fork this repository.</p>
+<h1 id="prerequisites">Prerequisites</h1>
+<ul>
+<li>Install git. On Windows, ensure that Git Bash is installed, which is normally included with the Windows Git installer. Use Git Bash when running any commands in this README.</li>
+</ul>
+<h1 id="initial-setup">Initial Setup</h1>
+<ol>
+<li>Clone Repository</li>
+<li>Install yarn package manager </li>
+<li>Install gitbook-cli globally <code>yarn global gitbook-cli</code></li>
+<li>Install dependencies <code>yarn install</code></li>
+<li>gitbook install at the root</li>
+</ol>
+<h1 id="configuring-your-ghe-repository-to-enable-github-pages">Configuring your GHE repository to enable GitHub Pages</h1>
+<ol>
+<li>Go to settings. For example, the settings for this repository would be located here:<pre><code>https://github.ibm.com/nguyenal/gitbook-starter/settings
+</code></pre></li>
+<li>Scroll to the GitHub Pages section</li>
+<li>Set Source to master branch / docs folder</li>
+</ol>
+<h1 id="usage">Usage</h1>
+<h2 id="serve-gitbook-locally-and-watch-for-changes">Serve GitBook locally and watch for changes</h2>
+<p>This is the primary way to develop documentation with GitBook. The development server will update automatically when changes are made.</p>
+<pre><code>$ gitbook serve
+</code></pre><p>The default URL for the development server is:</p>
+<pre><code>http://localhost:4000
+</code></pre><h2 id="build-static-files">Build static files</h2>
+<p>This is used for generating static HTML/CSS/JS files from markdown notation. We build into the docs folder, because this is where we serve the page from in GHE.</p>
+<pre><code>$ gitbook build . docs
+</code></pre><h2 id="publish-changes-to-github-pages">Publish changes to GitHub Pages</h2>
+<p>After building, we can just commit the entire directory to commit all of our changes, including the statically generated page from the build command.</p>
+<pre><code>$ gitbook install (only necessary the first time)
+$ gitbook build . docs
+$ git add .
+$ git commit -m &apos;my message&apos;
+$ git push origin master
+</code></pre><h1 id="known-issues">Known Issues</h1>
+<p>If you are receiving the following error:</p>
+<pre><code>Error: Error watching file for changes: EPERM
+</code></pre><p>This means gitbook is having trouble updating files. It is possible that your editor has a lock on the directory, so try closing the editor, running <code>gitbook serve</code> and then loading the editor again.</p>
+<h1 id="further-references">Further References</h1>
+<ul>
+<li>Gitbook examples and documentation: <a href="https://toolchain.gitbook.com/" target="_blank">https://toolchain.gitbook.com/</a></li>
+<li>Basic gitbook-cli commands: <a href="https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md" target="_blank">https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-06-29T16:58:13.673Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-29T16:59:51.335Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
